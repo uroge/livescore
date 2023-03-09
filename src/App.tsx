@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import reactLogo from '@assets/react.svg';
 import './App.css';
+import { useTranslation } from 'react-i18next';
+import { i18nextInitialization } from './i18n/i118n';
+
+// This is here just to use i18next..init({...})
+// or else the bundler will ignore it
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const i18nInit = i18nextInitialization;
 
 export const App = () => {
   const [count, setCount] = useState(0);
