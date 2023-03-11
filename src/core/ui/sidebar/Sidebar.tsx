@@ -1,5 +1,4 @@
 export const Sidebar: React.FC<{ children: React.ReactNode }> = ({
-  // eslint-disable-next-line react/prop-types
   children,
 }) => {
   return (

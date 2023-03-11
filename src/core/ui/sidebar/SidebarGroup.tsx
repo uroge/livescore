@@ -1,8 +1,6 @@
-/* eslint-disable import/no-internal-modules */
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { BsHash } from 'react-icons/bs';
-import { FaChevronDown, FaChevronRight, FaPlus } from 'react-icons/fa';
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 
 interface SidebarGroupProps {
   header: React.ReactNode;
