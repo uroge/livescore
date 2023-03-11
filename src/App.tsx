@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import reactLogo from '@assets/react.svg';
 import './App.css';
-import { useTranslation } from 'react-i18next';
 import { i18nextInitialization } from './i18n/i118n';
+import { useDarkMode } from '@theme';
 
 // This is here just to use i18next..init({...})
 // or else the bundler will ignore it
@@ -10,9 +9,9 @@ import { i18nextInitialization } from './i18n/i118n';
 const i18nInit = i18nextInitialization;
 
 export const App = () => {
-  const [count, setCount] = useState(0);
+  const toggleDarkMode = useDarkMode();
   return (
-    <div className="App">
+    <div className="container mx-auto bg-brand-primaryLight dark:bg-brand-primaryDark rounded-xl shadow border p-8 m-10">
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -21,16 +20,16 @@ export const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
+      <h1 className="text-brand-secondaryDark dark:bg-brand-secondaryLight">
+        Vite + React
+      </h1>
+      <div className="text-center bg-brand-secondaryLight dark:bg-brand-secondaryDark">
+        <button onClick={toggleDarkMode}>toggle mode</button>
+        <p className="text-brand-secondaryDark dark:bg-brand-secondaryLight">
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className="text-brand-secondaryDark dark:bg-brand-secondaryLight">
         Click on the Vite and React logos to learn more
       </p>
     </div>
