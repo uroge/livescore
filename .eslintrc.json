@@ -33,6 +33,13 @@
             ],
             "allow": ["**/node_modules/**"]
           }
+        ],
+        "import/no-relative-parent-imports": [
+          "error",
+          {
+            "allowSameFolder": true,
+            "allowNested": 2
+          }
         ]
       }
     },
