@@ -25,7 +25,8 @@
     "isolatedModules": true,
     "paths": {
       "@core/ui": ["src/core/ui/index.ts"],
-      "@assets": ["src/assets"]
+      "@assets": ["src/assets"],
+      "@theme": ["src/theme"]
     }
   },
   "include": ["src"],

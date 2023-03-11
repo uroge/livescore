@@ -9,6 +9,7 @@ export default defineConfig({
     alias: {
       '@core/ui': path.resolve(__dirname, './src/core/ui/index.ts'),
       '@assets': path.resolve(__dirname, './src/assets'),
+      '@theme': path.resolve(__dirname, './src/theme/index.ts'),
     },
   },
 });
