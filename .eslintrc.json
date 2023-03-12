@@ -21,10 +21,24 @@
         "@typescript-eslint/no-empty-inteface": "off",
         "@typescript-eslint/no-empty-function": "off",
         "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
         "import/no-internal-modules": [
           "error",
           {
-            "allow": ["./**"]
+            "files": [
+              "src/components/**/*.js",
+              "src/components/**/*.jsx",
+              "src/components/**/*.ts",
+              "src/components/**/*.tsx"
+            ],
+            "allow": ["**/node_modules/**"]
+          }
+        ],
+        "import/no-relative-parent-imports": [
+          "error",
+          {
+            "allowSameFolder": true,
+            "allowNested": 2
           }
         ]
       }
