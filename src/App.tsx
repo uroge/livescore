@@ -22,7 +22,7 @@ export const AppShell = () => {
     <div className="bg-brand-primaryLight dark:bg-brand-primaryDark">
       <AppBar />
       <Main>
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
         <Screen>
           <Outlet />
         </Screen>
