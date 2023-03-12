@@ -25,22 +25,10 @@
         "import/no-internal-modules": [
           "error",
           {
-            "files": [
-              "src/components/**/*.js",
-              "src/components/**/*.jsx",
-              "src/components/**/*.ts",
-              "src/components/**/*.tsx"
-            ],
             "allow": ["**/node_modules/**"]
           }
         ],
-        "import/no-relative-parent-imports": [
-          "error",
-          {
-            "allowSameFolder": true,
-            "allowNested": 2
-          }
-        ]
+        "import/no-relative-parent-imports": ["error"]
       }
     },
     {
